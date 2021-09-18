@@ -9,7 +9,7 @@ package com.mycompany.classesmethodsandobjects;
  *
  * @author Olugbayike
  */
-public class AddMethod {
+public class CompFuel {
 
     /**
      * @param args the command line arguments
@@ -18,8 +18,8 @@ public class AddMethod {
         // TODO code application logic here
         Vehicle minivan = new Vehicle(7,16,21);
         Vehicle sportscar = new Vehicle(2,14,12);
-        
-        int range1, range2;
+        double gallons;
+        int dist = 252;
         
 //        // assign values to fields in minivan
 //        minivan.passengers = 7;
@@ -31,14 +31,14 @@ public class AddMethod {
 //        sportscar.fuelcap = 14;
 //        sportscar.mpg = 12;
         
-        // compute the range assuming a full tank of gas
-        range1 = minivan.fuelcap * minivan.mpg;
-        range2 = sportscar.fuelcap * sportscar.mpg;
+        gallons = minivan.fuelNeeded(dist);
         
-        // print values.
-        System.out.print("Minivan can carry " + minivan.passengers + ". ");
-        minivan.range();
-        System.out.print("Sportscar can carry " + sportscar.passengers +". ");
-        sportscar.range();
+        System.out.println("To go " + dist +
+                " miles minivan needs " + gallons +" gallons of fuel.");
+        
+        gallons = sportscar.fuelNeeded(dist);
+        
+        System.out.println("To go " + dist +
+                " miles sportscar needs " + gallons +" gallons of fuel.");
     }
 }

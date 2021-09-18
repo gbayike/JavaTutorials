@@ -17,14 +17,15 @@ public class VehicleDemo {
      */
     public static void main(String args[]) {
         // TODO code application logic here
-        Vehicle minivan = new Vehicle();
+        Vehicle minivan = new Vehicle(7,16,21);
+        Vehicle sportscar = new Vehicle(2,14,12);
         
         int range;
         
-        // assingn values to fields in minivan
-        minivan.fuelcap = 16;
-        minivan.mpg = 21;
-        minivan.passengers = 7;
+//        // assingn values to fields in minivan
+//        minivan.fuelcap = 16;
+//        minivan.mpg = 21;
+//        minivan.passengers = 7;
         
         // compute the range assuming a full tank of gas
         range = minivan.fuelcap * minivan.mpg;

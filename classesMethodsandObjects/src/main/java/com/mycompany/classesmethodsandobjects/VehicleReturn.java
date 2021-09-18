@@ -16,20 +16,20 @@ public class VehicleReturn {
      */
     public static void main(String args[]) {
         // TODO code application logic here
-        Vehicle minivan = new Vehicle();
-        Vehicle sportscar = new Vehicle();
+        Vehicle minivan = new Vehicle(7,16,21);
+        Vehicle sportscar = new Vehicle(2,14,12);
         
         int range1, range2;
         
-        // assign values to fields in minivan
-        minivan.passengers = 7;
-        minivan.fuelcap = 16;
-        minivan.mpg = 21;
-        
-        // assign values to fields in sportscar
-        sportscar.passengers = 2;
-        sportscar.fuelcap = 14;
-        sportscar.mpg = 12;
+//        // assign values to fields in minivan
+//        minivan.passengers = 7;
+//        minivan.fuelcap = 16;
+//        minivan.mpg = 21;
+//        
+//        // assign values to fields in sportscar
+//        sportscar.passengers = 2;
+//        sportscar.fuelcap = 14;
+//        sportscar.mpg = 12;
         
         // compute the range assuming a full tank of gas
         range1 = minivan.fuelcap * minivan.mpg;
@@ -37,10 +37,10 @@ public class VehicleReturn {
         
         // print values.
         System.out.println("Minivan can carry " + minivan.passengers + 
-                "with range of " + minivan.range2() + "miles");
+                " with range of " + minivan.range2() + "miles");
         
         System.out.println("Sportscar can carry " + sportscar.passengers +
-                "with range of " + sportscar.range2() + "miles");
+                " with range of " + sportscar.range2() + "miles");
         
     }
 }
