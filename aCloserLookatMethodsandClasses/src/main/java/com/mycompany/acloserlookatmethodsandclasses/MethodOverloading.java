@@ -30,4 +30,16 @@ public class MethodOverloading {
         System.out.println("two parameter: " + a + " & "+ b);
         return a + b;
     }
+    
+    // One ovlDemo(int) is ok.
+//    void ovlDemo(Int a){
+//        System.out.println("One parameter: " + a);
+//    }
+    
+    // Error! Two ovlDemo(int)s are not OK even though 
+    // return types differ
+//    int ovlDemo(Int a){
+//        System.out.println("One parameter: " + a);
+//        return a * a;
+//    }
 }
