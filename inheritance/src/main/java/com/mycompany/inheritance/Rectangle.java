@@ -10,6 +10,18 @@ package com.mycompany.inheritance;
  * @author Olugbayike
  */
 public class Rectangle extends TwoDShapes{
+    
+    Rectangle(){
+        super();
+    }
+    
+    Rectangle(double width, double height, String msg){
+        super(width, height, msg);
+    }
+    
+    Rectangle(double x, String msg){
+        super(x, msg);
+    }
     boolean isSquare(){
         if(width == height) return true;
         return false;

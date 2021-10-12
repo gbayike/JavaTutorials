@@ -15,7 +15,23 @@ public class TwoDShapes {
     double width;
     double height;
     private String msg;
+
+    public TwoDShapes(double width, double height, String msg) {
+        this.width = width;
+        this.height = height;
+        this.msg = msg;
+    }
+    
+    TwoDShapes(){
+        width = height = 0;
+        msg = null;
+    }
         
+    TwoDShapes(double x, String msg){
+        width = height = x;
+        this.msg = msg;
+    }
+    
     // to access msg(PRIVATE VARIABLES) in sub class use accessor methods  
     String getMsg(){
         return msg;

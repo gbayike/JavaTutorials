@@ -16,28 +16,28 @@ public class ShapesDemo {
      */
     public static void main(String args[]) {
         // TODO code application logic here
-        Triangle t1 = new Triangle();
-        Triangle t2 = new Triangle();
-        TwoDShapes sh = new TwoDShapes();
-        Rectangle r1 = new Rectangle();
-        Rectangle r2 = new Rectangle();
+        Triangle t1 = new Triangle("filled","Triangle is ", 4.0, 4.0);
+        Triangle t2 = new Triangle("outlined","Triangle is ",8.0, 12.0);
+        TwoDShapes sh = new TwoDShapes(10, 20, null);
+        Rectangle r1 = new Rectangle(10, 10, null);
+        Rectangle r2 = new Rectangle(20, 10, null);
         
-        t1.width = 4.0;
-        t1.height = 4.0;
-        t1.style = "filled";
+//        t1.width = 4.0;
+//        t1.height = 4.0;
+//        t1.style = "filled";
         
-        t2.width = 8.0;
-        t2.height = 12.0;
-        t2.style = "outlined";
+//        t2.width = 8.0;
+//        t2.height = 12.0;
+//        t2.style = "outlined";
         
-        sh.width = 10;
-        sh.height = 20;
+//        sh.width = 10;
+//        sh.height = 20;
         
-        r1.height = 10;
-        r1.width = 10;
-        
-        r2.height = 10;
-        r2.width = 20;
+//        r1.height = 10;
+//        r1.width = 10;
+//        
+//        r2.height = 10;
+//        r2.width = 20;
         
         System.out.println("info for shape: ");
         sh.showDim();
